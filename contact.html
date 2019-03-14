@@ -25,9 +25,9 @@
           Name: <input type="text" name="name"><br>
           Address: <input type="text" name="name">
           <select name="state">
-            <option class = "state" value="UT">Utah</option>
-            <option class = "state" value="CA">California</option>
-            <option class = "state" value="NY">New York</option>
+            <option class = "state" id = "state" value="UT">Utah</option>
+            <option class = "state" id = "state" value="CA">California</option>
+            <option class = "state" id = "state" value="NY">New York</option>
           </select>        
       </fieldset>
       <input id="maleRB" type="radio" name="gender" value="male">
@@ -46,28 +46,33 @@
 	<script>
 			//Step 5: Set an id on each option in the select tag. Name the id's state1, state2, and state3.
 			//Change the states that are used in the dropdown box to "Missouri", "Iowa", "Nebraska". Use the states abbreviation for the value property.
+        
+            /* var changeOption = document.getElementsByTagName("option");
+            
+            for (var i = 0; i < changeOption.length; i++) {
+                if (i == 0) {
+                    changeOption[0].value = "MO";
+                    changeOption[0].textContent = "Missouri";
+                }
+                else if (i == 1) {
+                    changeOption[1].value = "IA";
+                    changeOption[1].textContent = "Iowa";
+                }
+                else if (i == 2) {
+                    changeOption[2].value = "NE";
+                    changeOption[2].textContent = "Nebraska";
+                }
+            } */
 
-			
-			
-			
-			
-			
-			
-			
-	
 			//Comment out the code for Step 5. On the Contact.html page, set a class id called "state" on each option in the select tag. 
 			//Write the code to change all of the states to the word "Hello". 
 
+			var changeClass = document.getElementsByClassName("state");
+            
+            for (var i = 0; i < changeClass.length; i++) {
+                changeClass[i].textContent = "Hello";
+            }
 			
-			
-			
-			
-			
-			
-			
-			
-			
-	
 	</script>
 	</div>
   </body>
